@@ -1,0 +1,43 @@
+1. O que é o teste de software? Qual a melhor definição?
+
+	É uma etapa o desenvolvimento de software que tem como objetivo verificar se o código escrito está funcionando corretamente de acordo com os requisitos. Sendo assim, os testes buscam identificar código não utilizado e erros no sistema. 
+
+
+2. O que é teste de unidade, integração e sistema?
+
+	O teste de unidade é testado apenas uma parte isolada do sistema, geralmente uma classe, O teste de integração do sistema é testado duas partes do sistema, geralmente duas classes, O teste de sistema é testado o sistema como um todo, garantindo se ele funciona com todas as partes completas.
+
+3. O que é um caso de teste? Dê exemplos.
+	
+	Um caso de teste é um conjunto de fatores que caracterizão o teste de software. Esses fatores são as entradas do teste, as condições de execução daquele teste e o resultado esperado ao fim da execução do teste de acordo com um objetivo específico.
+
+	Como exemplo podemos citar uma função que soma dois números. Os fatores são os seguintes, exemplo:
+		Entrada: 1, 2
+		Condição de execução: Resolver dependecias
+		Resultado esperado: 3
+	
+
+4. Qual a diferença entre um teste manual e um teste automatizado?
+
+	No teste manual são feitos testes no sistema sem usar ferramentas de automação, executados normalmente por um testador, que criam casos de testes e inserem dados de entrada, já o teste automatizado são utilizados ferramentas de automação que costumam ser mais rápidos que testes manuais, porém não encontram com tanta facilidade problemas de layouts e bugs triviais.
+
+
+5. Explique a diferença entre o teste caixa-branca e o teste caixa-preta.
+	
+	Em testes caixa-branca o testador possui acesso ao código e em testes caixa-preta não.
+
+6. O que é um teste de regressão?
+
+	É um teste realizado após uma nova versão ser lançada para garantir que defeitos não foram inseridos nos componentes que já foram analisados e testados, onde normalmente são utilizados ferramentas de automação.
+
+7. O que é um critério de teste? Cite exemplos.
+
+	São guias ou objetivos para guiar o teste.
+	No teste caixa branca exemplo Line Coverage.
+	No teste caixa preta exemplo análise de valor limite.
+
+
+
+EQUIPE: João Gabriel Salgado
+	Vinícius Augutis
+	Gabriel Takazaki
