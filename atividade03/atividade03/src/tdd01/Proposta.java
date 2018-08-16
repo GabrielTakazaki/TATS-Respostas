@@ -15,11 +15,11 @@ public class Proposta {
     int numeroParcelas;
     float valorParcela;
     
-    Proposta() {
+    public Proposta() {
         
     }
     
-    Proposta(float pTotal, int pNumeroParcelas) {
+    public Proposta(float pTotal, int pNumeroParcelas) {
         total = pTotal;
         numeroParcelas = pNumeroParcelas;
     }
