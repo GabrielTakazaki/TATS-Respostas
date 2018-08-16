@@ -1,6 +1,7 @@
 package atividade04;
 
 public class Funcionario {
+    
     String nome;
     String email;
     float salariobase;

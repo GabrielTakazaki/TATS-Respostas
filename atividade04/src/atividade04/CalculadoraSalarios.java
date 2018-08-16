@@ -1,11 +1,9 @@
 package atividade04;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class CalculadoraSalarios {
 
     public void calculoSalario(Funcionario f) {
+        
         if (f.getCargo().equals("DESENVOLVEDOR")) {
             if (f.getSalariobase() < 3000f) {
                 f.setSalarioLiquido(f.getSalariobase() - (f.getSalariobase() * 0.10f));
