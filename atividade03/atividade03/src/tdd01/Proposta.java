@@ -5,7 +5,6 @@ package tdd01;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author Aluno
@@ -16,6 +15,15 @@ public class Proposta {
     int numeroParcelas;
     float valorParcela;
     
+    Proposta() {
+        
+    }
+    
+    Proposta(float pTotal, int pNumeroParcelas) {
+        total = pTotal;
+        numeroParcelas = pNumeroParcelas;
+    }
+
     public float getTotal() {
         return total;
     }
@@ -39,6 +47,5 @@ public class Proposta {
     public void setValorParcela(float valorParcela) {
         this.valorParcela = valorParcela;
     }
-    
-    
+
 }

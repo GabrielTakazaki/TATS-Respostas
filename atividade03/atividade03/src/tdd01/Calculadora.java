@@ -14,20 +14,28 @@ import java.util.List;
  */
 public class Calculadora {
 
-    public List<Proposta> calcular(float valorDoEmprestimo) {
+    public List<Proposta> calcular(float salario, float valorDoEmprestimo) {
         ArrayList<Proposta> propostas = new ArrayList<>();
-        
-        Proposta p1 = new Proposta();
-        p1.setTotal(2 * valorDoEmprestimo);
-        p1.setNumeroParcelas(2);
-        propostas.add(p1);
-        
-        Proposta p2 = new Proposta();
-        p2.setTotal(2 * valorDoEmprestimo);
-        p2.setNumeroParcelas(3);
-        propostas.add(p2);
-        
-        return propostas;
+
+        if (salario <= 1000) {
+            propostas.add(new Proposta(2 * valorDoEmprestimo, 2));
+            propostas.add(new Proposta(2 * valorDoEmprestimo, 3));
+
+            return propostas;
+        } else if (salario <= 5000) {
+            propostas.add(new Proposta(1.3f * valorDoEmprestimo, 2));
+            propostas.add(new Proposta(1.5f * valorDoEmprestimo, 4));
+            propostas.add(new Proposta(1.5f * valorDoEmprestimo, 10));
+
+            return propostas;
+        } else {
+            propostas.add(new Proposta(1.1f * valorDoEmprestimo, 2));
+            propostas.add(new Proposta(1.3f * valorDoEmprestimo, 4));
+            propostas.add(new Proposta(1.3f * valorDoEmprestimo, 10));
+            propostas.add(new Proposta(1.4f * valorDoEmprestimo, 20));
+
+            return propostas;
+        }
     }
-    
+
 }
