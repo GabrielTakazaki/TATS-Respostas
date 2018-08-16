@@ -7,6 +7,11 @@ public class Funcionario {
     float salariobase;
     String cargo;
     float salarioLiquido;
+    
+    public String getMsg () {
+        return "nome vazio\nemail vazio\n"
+                + "cargo vazio\nsalario base vazio\n";
+    }
 
     public float getSalarioLiquido() {
         return salarioLiquido;
