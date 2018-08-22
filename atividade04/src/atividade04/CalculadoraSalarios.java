@@ -46,6 +46,7 @@ public class CalculadoraSalarios {
                 f.setSalarioLiquido(f.getSalariobase() - (f.getSalariobase() * 0.30f));
             }
         } else {
+            f.setSalarioLiquido(0f);
             f.setMsgErro("Cargo inexistente\n");
         }
     }
