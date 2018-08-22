@@ -7,10 +7,14 @@ public class Funcionario {
     float salariobase;
     String cargo;
     float salarioLiquido;
-    
-    public String getMsg () {
-        return "nome vazio\nemail vazio\n"
-                + "cargo vazio\nsalario base vazio\n";
+    String msgErro = "";
+
+    public String getMsgErro() {
+        return msgErro;
+    }
+
+    public void setMsgErro(String msgErro) {
+        this.msgErro += msgErro;
     }
 
     public float getSalarioLiquido() {
@@ -52,4 +56,5 @@ public class Funcionario {
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
+
 }
