@@ -39,5 +39,13 @@ public class tdd04Test {
         calc.calculoSalario(f);
         assertEquals("Email vazio\n", f.getMsgErro());
     }
-    
+    @Test
+    public void  testeNomeVazio() {
+        
+        f.setEmail("G");
+        f.setCargo("DESENVOLVEDOR");
+        f.setSalariobase(1f);
+        calc.calculoSalario(f);
+       assertEquals("Nome vazio\n", f.getMsgErro());
+    }
 }
