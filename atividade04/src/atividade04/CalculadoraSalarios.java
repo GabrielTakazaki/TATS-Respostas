@@ -9,7 +9,7 @@ public class CalculadoraSalarios {
     }
     
     public void validarCampos(Funcionario f) {
-        if (f.getNome().equals("")) {
+        if (f.getNome() == null || f.getNome().equals("")) {
             f.setMsgErro("Nome vazio\n");
         }
         if (f.getEmail() == null||f.getEmail().equals("")) {
