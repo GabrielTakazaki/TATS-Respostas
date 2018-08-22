@@ -12,7 +12,7 @@ public class CalculadoraSalarios {
         if (f.getNome().equals("")) {
             f.setMsgErro("Nome vazio\n");
         }
-        if (f.getEmail().equals("")) {
+        if (f.getEmail() == null||f.getEmail().equals("")) {
             f.setMsgErro("Email vazio\n");
         }
         if (f.getSalariobase() == 0f) {
